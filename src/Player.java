@@ -1,7 +1,7 @@
 public class Player {
 
     private int currentHandSize;
-    private CardBase[] currentHand;
+    public CardBase[] currentHand;
     private int maxHandSize;
 
 
@@ -30,11 +30,32 @@ public class Player {
         currentHandSize +=1;
     }
 
+    private void removeCard(CardBase playedCard){
+        currentHandSize-=1;
+        CardBase[] newHand = new CardBase[currentHandSize];
+        int j = 0;
+        for(int i = 0; i < currentHandSize+1;i++){
+            if(currentHand[i] != playedCard){
+                newHand[i] = currentHand[i];
+
+            }
+
+
+        for(i = 0; i < currentHandSize;i++){
+            currentHand[i] = newHand[i];
+        }
+
+        }
+
+
+    }
 
     public void playCard(CardBase playedCard, DiscardPile playpile) {
         if (GameRules.doesMatch(playedCard, playpile.currentCard)) {
             playpile.pile.addLast(playedCard);
+            removeCard(playedCard);
             playpile.currentCard = playpile.pile.getLast();
+
         } else {
             System.out.println("you cant play this Card");
             return;

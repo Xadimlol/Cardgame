@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58893450-036d-4904-a151-82a5563e2afb" name="Changes" comment="Base">
-      <change afterPath="$PROJECT_DIR$/src/DiscardPile.java" afterDir="false" />
+    <list default="true" id="58893450-036d-4904-a151-82a5563e2afb" name="Changes" comment="rewrote Deck as a list, instead of array, fixed all errors coming from it">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CardBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CardBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CardColours.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CardColours.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CardValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CardValues.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameRules.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
     </list>
@@ -55,7 +49,7 @@
       <option name="presentableId" value="Default" />
       <updated>1661885123312</updated>
       <workItem from="1661885124655" duration="15507000" />
-      <workItem from="1661932899932" duration="13383000" />
+      <workItem from="1661932899932" duration="17433000" />
     </task>
     <task id="LOCAL-00001" summary="check">
       <created>1661885855205</created>
@@ -71,7 +65,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661893152280</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="rewrote Deck as a list, instead of array, fixed all errors coming from it">
+      <created>1661946534959</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661946534959</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,7 +92,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="check" />
     <MESSAGE value="Base" />
-    <option name="LAST_COMMIT_MESSAGE" value="Base" />
+    <MESSAGE value="rewrote Deck as a list, instead of array, fixed all errors coming from it" />
+    <option name="LAST_COMMIT_MESSAGE" value="rewrote Deck as a list, instead of array, fixed all errors coming from it" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

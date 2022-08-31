@@ -13,6 +13,6 @@ public class Main {
     kevin.showHand();
     kevin.playCard(kevin.currentHand[3], playpile);
     System.out.println("TRENNWAND");
-
+    System.out.println("kam an");
     }
 }

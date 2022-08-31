@@ -1,4 +1,5 @@
 public enum CardColours {
+    placeHolder,
     club,
     diamond,
     heart,
@@ -17,7 +18,7 @@ public enum CardColours {
             case 3:
                 return spade;
         }
-        return null;
+        return placeHolder;
     }
 }
 

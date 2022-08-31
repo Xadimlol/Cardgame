@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.util.concurrent.ArrayBlockingQueue;
 
 public enum CardValues {
+    placeHolder,
     two,
     three,
     four,
@@ -58,6 +59,6 @@ public enum CardValues {
             case 12:
                 return ace;
         }
-        return null;
+        return placeHolder;
     }
 }

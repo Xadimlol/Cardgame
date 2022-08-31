@@ -2,6 +2,7 @@ public class CardBase {
     private CardColours colour;
     private CardValues value;
 
+
     public CardBase(CardValues givenValue, CardColours givenColour){
         colour = givenColour;
         value = givenValue;

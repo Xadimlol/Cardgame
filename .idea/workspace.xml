@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58893450-036d-4904-a151-82a5563e2afb" name="Changes" comment="implemented faulty remove card">
+    <list default="true" id="58893450-036d-4904-a151-82a5563e2afb" name="Changes" comment="test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1661885123312</updated>
       <workItem from="1661885124655" duration="15507000" />
-      <workItem from="1661932899932" duration="17847000" />
+      <workItem from="1661932899932" duration="19442000" />
     </task>
     <task id="LOCAL-00001" summary="check">
       <created>1661885855205</created>
@@ -76,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661951967544</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="test">
+      <created>1661952377470</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1661952377470</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,7 +107,8 @@
     <MESSAGE value="Base" />
     <MESSAGE value="rewrote Deck as a list, instead of array, fixed all errors coming from it" />
     <MESSAGE value="implemented faulty remove card" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented faulty remove card" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

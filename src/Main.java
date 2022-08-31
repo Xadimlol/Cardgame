@@ -11,8 +11,7 @@ public class Main {
     playpile.startingCard(deck);
     Player kevin = new Player(6, 52, deck);
     kevin.showHand();
-    kevin.playCard(kevin.currentHand[3], playpile);
-    System.out.println("TRENNWAND");
-    System.out.println("kam an");
+
+
     }
 }

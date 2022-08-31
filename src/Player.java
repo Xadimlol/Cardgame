@@ -33,20 +33,12 @@ public class Player {
     private void removeCard(CardBase playedCard){
         currentHandSize-=1;
         CardBase[] newHand = new CardBase[currentHandSize];
-        int j = 0;
-        for(int i = 0; i < currentHandSize+1;i++){
-            if(currentHand[i] != playedCard){
-                newHand[i] = currentHand[i];
-
+        for(int i = 0, j = 0; i < currentHandSize+1;i++){
+            if(!(playedCard == currentHand[i])){
+            newHand[j++] = currentHand[i];
             }
-
-
-        for(i = 0; i < currentHandSize;i++){
-            currentHand[i] = newHand[i];
         }
-
-        }
-
+        currentHand = newHand;
 
     }
 

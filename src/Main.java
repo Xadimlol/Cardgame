@@ -1,12 +1,8 @@
 
 public class Main {
-public static void main(String[] args) {
-    CardBase blackAce = new CardBase();
-    CardBase whiteAce = new CardBase();
-    GameRules rules = new GameRules();
 
+    public static void main(String[] args) {
+        Deck deck = new Deck(52,"keck");
 
-
-}
-
+    }
 }

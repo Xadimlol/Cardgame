@@ -1,24 +1,28 @@
 public class CardBase {
-    private int colour;
-    private int value;
+    private CardColours colour;
+    private CardValues value;
 
-    public CardBase(){
-        colour = 0;
-        value = 0;
+    public CardBase(CardValues givenValue, CardColours givenColour){
+        colour = givenColour;
+        value = givenValue;
     }
 
 
-    public void setColour(int x){
+    public void setColour(CardColours x){
         colour = x;
     }
-    public int getColour(){
+    public CardColours getColour(){
         return colour;
     }
-    public void setValue(int x){
+    public void setValue(CardValues x){
         value = x;
     }
 
-    public int getValue(){
+    public CardValues getValue(){
         return value;
+    }
+
+    public void showCard(){
+        System.out.println(value + "+" + colour);
     }
 }

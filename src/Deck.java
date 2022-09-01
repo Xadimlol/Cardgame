@@ -42,7 +42,7 @@ public class Deck {
 
     public void showDeck(){
         for(int i = 0; i < 52; i++){
-        deck.getFirst().showCard();
+        deck.getFirst().showCard("");
         deck.removeFirst();
         }
     }

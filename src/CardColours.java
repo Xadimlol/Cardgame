@@ -15,10 +15,14 @@ public enum CardColours {
 
             case 2:
                 return heart;
+
             case 3:
                 return spade;
+
+            default:
+                return placeHolder;
         }
-        return placeHolder;
+
     }
 }
 

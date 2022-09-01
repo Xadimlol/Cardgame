@@ -23,7 +23,10 @@ public class CardBase {
         return value;
     }
 
-    public void showCard(){
-        System.out.println(value + "+" + colour);
-    }
+    public void showCard(String string){
+        System.out.println(string + value + " of " + colour + "s");
+        }
+
+
+
 }

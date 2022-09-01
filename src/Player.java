@@ -1,44 +1,52 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class Player {
 
     private int currentHandSize;
     public CardBase[] currentHand;
-    private int maxHandSize;
 
 
-    public Player(int startHand, int maxHandSize1, Deck deck) {
-        currentHand =  new CardBase[maxHandSize1];
+
+
+    public Player(int startHand, Deck deck) {
+        currentHand =  new CardBase[startHand];
         drawStartingHand(startHand, deck);
         currentHandSize = startHand;
-        maxHandSize = maxHandSize1;
+
     }
 
     private void drawStartingHand(int startHand, Deck deck){
 
         for(int i = 0; i < startHand; i++){
             currentHand[i] = deck.drawCard();
-
         }
 
     }
 
+
+
+
     public void drawCard(Deck deck){
-        if(maxHandSize == currentHandSize){
-            System.out.println("you cant draw more cards");
-            return;
+        CardBase[] newHand = new CardBase[currentHandSize+1];
+        for(int i = 0; i < currentHandSize; i++){
+            newHand[i] = currentHand[i];
         }
-        currentHand[currentHandSize] = deck.drawCard();
-        currentHandSize +=1;
+        newHand[currentHandSize] = deck.drawCard();
+        currentHand = newHand;
+        currentHandSize+=1;
     }
 
     private void removeCard(CardBase playedCard){
-        currentHandSize-=1;
-        CardBase[] newHand = new CardBase[currentHandSize];
-        for(int i = 0, j = 0; i < currentHandSize+1;i++){
+        CardBase[] newHand = new CardBase[currentHandSize-1];
+        for(int i = 0, j = 0; i < currentHandSize;i++){
             if(!(playedCard == currentHand[i])){
             newHand[j++] = currentHand[i];
             }
         }
         currentHand = newHand;
+        currentHandSize-=1;
 
     }
 
@@ -55,9 +63,15 @@ public class Player {
     }
 
    public void showHand(){
+        String prefix;
         for(int i = 0; i < currentHandSize; i++){
-        currentHand[i].showCard();
+        prefix = String.valueOf(i);
+        prefix = prefix + ") ";
+        currentHand[i].showCard(prefix);
         }
+   }
+   public int getCurrentHandSize(){
+        return currentHandSize;
    }
 
 }

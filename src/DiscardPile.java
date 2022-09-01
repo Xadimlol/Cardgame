@@ -12,12 +12,10 @@ public class DiscardPile {
 
 
 
-    public void showPile(int size){
-        for(int i = 0; i < size; i++){
-            pile.getFirst().showCard();
-            pile.removeFirst();
+    public void showPile(){
+            pile.getLast().showCard("Top of playing field ");
         }
-    }
+
 
     public void startingCard(Deck deck){
         pile.addFirst(deck.drawCard());

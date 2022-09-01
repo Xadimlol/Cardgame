@@ -58,7 +58,10 @@ public enum CardValues {
 
             case 12:
                 return ace;
+
+            default:
+                return placeHolder;
         }
-        return placeHolder;
+
     }
 }

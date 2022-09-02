@@ -19,7 +19,9 @@ public Game(Player[] players, int playerNumber, Deck deck, DiscardPile playPile)
     playerList = players;
     setStartTurn();
     currentDeck = deck;
+    deck.shuffleDeck();
     playingField = playPile;
+    playingField.startingCard(deck);
     gameRunning = true;
     gameMethod();
 }
@@ -47,7 +49,7 @@ private void choseCard () throws IOException{
     System.out.println("Player"+ (whoseTurn+1) + " chose which Card to play");
     playerList[whoseTurn].showHand();
     String input = reader.readLine();
-    playerList[whoseTurn].playCard(playerList[whoseTurn].currentHand[Integer.valueOf(input)], playingField);
+    playerList[whoseTurn].playCard(playerList[whoseTurn].currentHand[Integer.valueOf(input)-1], playingField);
 
 }
 

@@ -65,7 +65,7 @@ public class Player {
    public void showHand(){
         String prefix;
         for(int i = 0; i < currentHandSize; i++){
-        prefix = String.valueOf(i);
+        prefix = String.valueOf(i+1);
         prefix = prefix + ") ";
         currentHand[i].showCard(prefix);
         }
